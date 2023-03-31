@@ -50,7 +50,7 @@ function HomePages() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     responsive: [
       {
         breakpoint: 768,
@@ -76,7 +76,7 @@ function HomePages() {
     
       <Slider {...settings}>
         {post.map((image,index) => (
-          <div class="relative  text-center  overflow-hidden rounded-lg md:h-[650px] " key={index}>
+          <div class="relative text-center  overflow-hidden rounded-lg md:h-[750px] " key={index}>
 
         <div class="static  duration-700 ease-in-out" >
         <img class="object-cover opacity-80  absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 "
