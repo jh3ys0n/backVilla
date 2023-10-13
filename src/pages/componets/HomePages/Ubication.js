@@ -13,7 +13,7 @@ function Ubication() {
       </div>
     </div>
     <div className="">
-      <iframe className="w-full h-[600px] px-20" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7411.263753862688!2d-67.48530147297136!3d-21.755792692436447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96aa8752c8044eb3%3A0x3c2bc8ca61428f92!2sMallcu!5e0!3m2!1ses!2sbo!4v1680283521754!5m2!1ses!2sbo" allowFullScreen loading="lazy"></iframe>
+      <iframe className="w-full h-[600px] px-20" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9321.98019040541!2d-67.48530147297136!3d-21.75579269243645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96aa8752c8044eb3%3A0x3c2bc8ca61428f92!2sMallcu!5e1!3m2!1ses!2sbo!4v1680396026797!5m2!1ses!2sbo" allowFullScreen loading="lazy"></iframe>
     </div>
   </div>
 </section>

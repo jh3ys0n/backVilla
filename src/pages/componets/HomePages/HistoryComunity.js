@@ -4,7 +4,7 @@ import image2 from '../../../assets/img/12525131_910828839037730_208997912670117
 function HistoryComunity() {
   return (
     <>
-    <section class="bg-gradient-to-b from-red-200 mt-[-6px]">
+    <section class="bg-gradient-to-b from-red-100 mt-[-6px]">
     
     <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
         

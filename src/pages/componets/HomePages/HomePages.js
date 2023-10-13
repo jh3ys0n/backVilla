@@ -3,34 +3,29 @@ import axios from 'axios';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
+import img1 from '../../../assets/img/img1.jpg'
+import img2 from '../../../assets/img/img2.jpg'
+import img3 from '../../../assets/img/img3.jpg'
 function HomePages() {
   const [images, setImages] = React.useState([
     {
       id: 1,
-      src: 'https://picsum.photos/id/1/400/300',
-      alt: 'Image 1'
+      src: img1,
+      alt: 'Image 1',
+      subTitle: 'PUEBLO INDIGENA ORIGINARIO',
+      title: 'Mallku Villa Mar'
     },
     {
       id: 2,
-      src: 'https://picsum.photos/id/2/400/300',
+      src: img2,
       alt: 'Image 2'
     },
     {
       id: 3,
-      src: 'https://picsum.photos/id/3/400/300',
+      src: img3,
       alt: 'Image 3'
     },
-    {
-      id: 4,
-      src: 'https://picsum.photos/id/4/400/300',
-      alt: 'Image 4'
-    },
-    {
-      id: 5,
-      src: 'https://picsum.photos/id/5/400/300',
-      alt: 'Image 5'
-    }
+
   ]);
   const [post, setPost] = useState([]);
  React.useEffect(() => {
@@ -75,15 +70,16 @@ function HomePages() {
     <>
     
       <Slider {...settings}>
-        {post.map((image,index) => (
-          <div class="relative text-center  overflow-hidden rounded-lg md:h-[750px] " key={index}>
+        {images.map((image,index) => (
+          <div class="relative text-center w-full  overflow-hidden rounded-lg h-[550px] md:h-[750px] " key={index}>
 
-        <div class="static  duration-700 ease-in-out" >
-        <img class="object-cover opacity-80  absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 "
-        src={image.base64}/>
-        <div className='absolute inset-x-0 w-3/4 md:w-2/5 mx-auto -mt-1 rounded-lg rounded-t-none pt-16'>
-          <h1 className='text-[#c83c51] font-light animate__animated animate__bounce text-9xl font-dancing-script text-center'>{image.title}</h1>
-          <h2 className='text-black font-bold text-5xl font-tilt-Warp pt-11 text-center'>{image.subTitle}</h2>
+        <div class="static  " >
+        <img class="object-fill opacity-80  absolute block w-full sm:h-[750px] h-auto  "
+        src={image.src}/>
+        <div className='absolute inset-x-0 w-3/4 md:w-2/5 mx-auto -mt-1  pt-12'>
+        <p className='text-black font-light my-3 text-xl md:text-2xl pt-11 text-center'>{image.subTitle}</p>
+          <h1 className='text-[#E63946] my-3 font-light animate__animated animate__bounce text-4xl md:text-9xl font-dancing-script text-center'>{image.title}</h1>
+          
         </div>
         </div>
        
@@ -95,6 +91,26 @@ function HomePages() {
 }
 export default HomePages 
 /**
+ <Slider {...settings}>
+        {post.map((image,index) => (
+          <div class="relative text-center w-full  overflow-hidden rounded-lg h-[550px] md:h-[750px] " key={index}>
+
+        <div class="static  " >
+        <img class="object-fill opacity-80  absolute block w-full sm:h-[750px] h-auto  "
+        src={image.base64}/>
+        <div className='absolute inset-x-0 w-3/4 md:w-2/5 mx-auto -mt-1  pt-12'>
+        <p className='text-black font-light my-3 text-xl md:text-2xl pt-11 text-center'>{image.subTitle}</p>
+          <h1 className='text-[#E63946] my-3 font-light animate__animated animate__bounce text-4xl md:text-9xl font-dancing-script text-center'>{image.title}</h1>
+          
+        </div>
+        </div>
+       
+      </div>
+        ))}
+      </Slider>
+
+
+      ----------------------------------------
 import { Portal } from '@mui/material';
 import 'animate.css';
 import axios from "axios";
