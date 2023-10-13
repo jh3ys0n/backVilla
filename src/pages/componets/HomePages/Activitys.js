@@ -5,7 +5,7 @@ import image3 from '../../../assets/img/301404312_5409951572458745_4351365782841
 function Activitys() {
   //bg-gradient-to-t from-red-200 to-whiter-500
     return (
-    <section class=" text-gray-600 body-font">
+    <section class="bg-gradient-to-b from-red-50 text-gray-600 body-font">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-col ">
       <div class="h-1 bg-gray-200 rounded overflow-hidden">

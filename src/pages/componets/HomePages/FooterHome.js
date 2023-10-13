@@ -1,33 +1,30 @@
 import React from 'react'
-
+import logo from '../../../assets/img/logo.png'
+import { Link } from "react-router-dom";
 function FooterHome() {
   return (
     
-<footer class="bg-white rounded-lg shadow  m-4">
-    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-        <div class="sm:flex sm:items-center sm:justify-between">
-            <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0">
-                <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="Flowbite Logo" />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap ">Flowbite</span>
-            </a>
-            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 ">
-                <li>
-                    <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
-                </li>
-                <li>
-                    <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
-                </li>
-                <li>
-                    <a href="#" class="mr-4 hover:underline md:mr-6 ">Licensing</a>
-                </li>
-                <li>
-                    <a href="#" class="hover:underline">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span class="block text-sm text-gray-500 sm:text-center ">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.</span>
-    </div>
+
+<footer class="text-gray-600 body-font">
+  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+    <Link to="/" class="flex items-center">
+      <img src={logo} class="h-28 mr-3" alt="Flowbite Logo"></img>
+      
+    </Link>
+      <span class="ml-3 text-xl">Mallku Villa Mar</span>
+    </a>
+    <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 jhson
+    </p>
+    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+      <a href='https://www.facebook.com/profile.php?id=100064713695465&sk=videos' class="text-gray-500">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+        </svg>
+      </a>
+      
+    </span>
+  </div>
 </footer>
 
 

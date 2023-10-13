@@ -2,7 +2,7 @@ import React from 'react'
 
 function Ubication() {
   return (
-<section class=" text-gray-600 body-font">
+<section id="about" class=" text-gray-600 body-font">
   <div class="container px-5 py-16 mx-auto">
     <div class="flex flex-col ">
       <div class="h-1 bg-gray-200 rounded overflow-hidden">

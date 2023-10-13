@@ -25,10 +25,10 @@ function Navbar() {
           <Link  to="/" class="block py-2 pl-3 pr-4 text-white  rounded md:bg-transparent" aria-current="page">Inicio</Link>
         </li>
         <li>
-          <Link to="/news" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent">Noticias</Link>
+          <Link to="/404" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent">Noticias</Link>
         </li>
         <li>
-        <Link to="/list_news" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent">About</Link>
+        <Link to="/about" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent">Contactanos</Link>
         </li>
       </ul>
     </div>

@@ -1,13 +1,14 @@
 import React from 'react'
-
+import gallery7 from '../../../assets/img/img3-2.jpg'
 function Paralax_home() {
-    const sectionStyle = {
-        backgroundImage: "https://drive.google.com/file/d/180XDavGCSy1aKL36SOYc1n086lZDpbIP/view?usp=sharing')",
-        backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed',
-      };
+  const sectionStyle = {
+    backgroundImage: `url(${gallery7})`,
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundAttachment: 'fixed',
+  };
+  
     
       const containerStyle = {
         backdropFilter: 'blur(10px)',
