@@ -76,9 +76,9 @@ function HomePages() {
         <div class="static  " >
         <img class="object-fill opacity-80  absolute block w-full h-[600px] md:h-[750px]   "
         src={image.src}/>
-        <div className='absolute inset-x-0 w-3/4 md:w-2/5 mx-auto -mt-1 pt-32  md:pt-12'>
-        <p className='text-black font-light my-3 text-sm md:text-2xl pt-11 text-center'>{image.subTitle}</p>
-          <h1 className='text-[#E63946] my-3 font-light animate__animated animate__bounce text-5xl md:text-9xl font-dancing-script text-center'>{image.title}</h1>
+        <div className='absolute inset-x-0 w-3/4 md:w-2/5 mx-auto -mt-1 pt-6  md:pt-12'>
+        <p className='text-black font-bold my-3 text-sm md:text-2xl pt-11 text-center'>{image.subTitle}</p>
+          <h1 className='text-[#E63946] my-3  animate__animated animate__bounce text-5xl md:text-9xl font-shadow text-center'>{image.title}</h1>
           
         </div>
         </div>

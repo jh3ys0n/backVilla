@@ -1,6 +1,5 @@
 {
   "name": "villa_mar",
-  "homepage": "https://metano-gas.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

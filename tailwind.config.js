@@ -6,6 +6,8 @@ module.exports = {
       fontFamily: {
         'dancing-script': ['"Dancing Script"', 'cursive'],
         'tilt-Warp': ['"Tilt Warp"', 'cursive'],
+        'shadow': ['Londrina Shadow', 'sans-serif'],
+        'sans': ['Lato', 'sans-serif'],
       },
     },
   },
