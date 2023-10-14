@@ -46,9 +46,12 @@ function Gallery() {
    
     return (
       <>
+      
       <section class=" bg-gradient-to-t from-red-50  text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto flex flex-wrap">
-    <div class="flex w-full mb-20 flex-wrap">
+        
+  <div class="container px-1 py-20 md:px-5 md:py-24 mx-auto flex flex-wrap">
+    
+    <div class="flex w-full mb-5 md:mb-20 flex-wrap">
       
       <h1 class="mb-4 text-5xl tracking-tight font-extrabold py-5 text-gray-700">Galleria de Fotos</h1>
       

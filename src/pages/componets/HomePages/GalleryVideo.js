@@ -29,7 +29,16 @@ function GalleryVideo() {
   return (
     <>
       <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto">
+      
+        <div className="container px-5 py-10 md:py-24 mx-auto">
+        <div class="h-1 bg-gray-200 rounded overflow-hidden">
+        <div class="w-500 h-full bg-red-500"></div>
+      </div>
+        <div class="flex w-full mb-10 md:mb-20 flex-wrap">
+      
+      <h1 class="mb-4  text-5xl tracking-tight font-extrabold py-10 text-gray-700">Galleria de Videos</h1>
+      
+    </div>
           <div className="flex flex-wrap -m-4">
             <a href={video1} className="glightbox lg:w-1/3 sm:w-1/2 p-4">
               <video

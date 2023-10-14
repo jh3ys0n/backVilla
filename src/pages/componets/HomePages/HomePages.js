@@ -74,11 +74,11 @@ function HomePages() {
           <div class="relative text-center w-full  overflow-hidden rounded-lg h-[550px] md:h-[750px] " key={index}>
 
         <div class="static  " >
-        <img class="object-fill opacity-80  absolute block w-full sm:h-[750px] h-auto  "
+        <img class="object-fill opacity-80  absolute block w-full h-[600px] md:h-[750px]   "
         src={image.src}/>
-        <div className='absolute inset-x-0 w-3/4 md:w-2/5 mx-auto -mt-1  pt-12'>
-        <p className='text-black font-light my-3 text-xl md:text-2xl pt-11 text-center'>{image.subTitle}</p>
-          <h1 className='text-[#E63946] my-3 font-light animate__animated animate__bounce text-4xl md:text-9xl font-dancing-script text-center'>{image.title}</h1>
+        <div className='absolute inset-x-0 w-3/4 md:w-2/5 mx-auto -mt-1 pt-32  md:pt-12'>
+        <p className='text-black font-light my-3 text-sm md:text-2xl pt-11 text-center'>{image.subTitle}</p>
+          <h1 className='text-[#E63946] my-3 font-light animate__animated animate__bounce text-5xl md:text-9xl font-dancing-script text-center'>{image.title}</h1>
           
         </div>
         </div>
