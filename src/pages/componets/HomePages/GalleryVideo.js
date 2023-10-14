@@ -40,33 +40,15 @@ function GalleryVideo() {
       
     </div>
           <div className="flex flex-wrap -m-4">
-            <a href={video1} className="glightbox lg:w-1/3 sm:w-1/2 p-4">
-              <video
-                className="w-full aspect-video"
-                controls
-              >
-                <source src={video1} type="video/mp4" />
-                Tu navegador no admite el elemento de video.
-              </video>
-            </a>
-            <a href={video2} className="glightbox lg:w-1/3 sm:w-1/2 p-4">
-              <video
-                className="w-full aspect-video"
-                controls
-              >
-                <source src={video2} type="video/mp4" />
-                Tu navegador no admite el elemento de video.
-              </video>
-            </a>
-            <a href={video3} className="glightbox lg:w-1/3 sm:w-1/2 p-4">
-              <video
-                className="w-full aspect-video"
-                controls
-              >
-                <source src={video3} type="video/mp4" />
-                Tu navegador no admite el elemento de video.
-              </video>
-            </a>
+            <div className=" lg:w-1/3 sm:w-1/2 p-4">
+            <iframe src="https://drive.google.com/file/d/1GfgoE6DlLDFwkPB9f456VpynjSTTS9Xf/preview" className="w-full aspect-video" ></iframe>
+            </div>
+            <div className=" lg:w-1/3 sm:w-1/2 p-4">
+            <iframe src="https://drive.google.com/file/d/1OnveBu_u6kXFs94DlHqCFpSBVbU_Oo8L/preview" className="w-full aspect-video" ></iframe>
+            </div>
+            <div className=" lg:w-1/3 sm:w-1/2 p-4">
+            <iframe src="https://drive.google.com/file/d/1cD-vs9K-37HMrHsaaCYUdspNCOFhmBca/preview" className="w-full aspect-video" ></iframe>
+            </div>
           </div>
         </div>
       </section>
