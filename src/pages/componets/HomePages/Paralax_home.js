@@ -1,5 +1,5 @@
 import React from 'react'
-import gallery7 from '../../../assets/img/img3-2.jpg'
+import gallery7 from '../../../assets/img/15885895769_3b4acd941e_o.jpg'
 function Paralax_home() {
   const sectionStyle = {
     backgroundImage: `url(${gallery7})`,

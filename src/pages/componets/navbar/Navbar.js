@@ -1,41 +1,121 @@
-import React from 'react'
-import logo from '../../../assets/img/logo.png'
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import logo from '../../../assets/img/logo.png';
 
 function Navbar() {
-  return (
-<nav class="fixed w-full top-0 z-20 backdrop-filter backdrop-blur-lg bg-opacity-50">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ">
-    <Link to="/" class="flex items-center">
-      <img src={logo} class="h-20 mr-3" alt="Flowbite Logo"></img>
-      
-    </Link>
-    <div class="flex md:order-2">
-      <Link  to="/login" type="button" class="text-white text-xl  font-light   focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-[#1D3557] dark:hover:bg-[#1D3557] dark:focus:ring-blue-800">Iniciar Secion</Link>
-      <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-        </svg>
-      </button>
-    </div>
-    <div class="items-center text-xl font-light justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-[#1D3557] md:dark:bg-[#1D3557] dark:border-gray-700">
-        <li>
-          <Link  to="/" class="block py-2 pl-3 pr-4 text-white  rounded md:bg-transparent" aria-current="page">Inicio</Link>
-        </li>
-        <li>
-          <Link to="/404" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent">Noticias</Link>
-        </li>
-        <li>
-        <Link to="/about" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent">Contactanos</Link>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
-  )
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <nav
+      className={`fixed top-0 w-full z-20 transition-all duration-300 ${
+        isScrolled ? 'bg-gray-800 shadow-md' : 'bg-transparent'
+      }`}
+    >
+      <div className="max-w-screen-xl mx-auto flex items-center justify-between px-4 py-2">
+        <a href="/" className="flex items-center">
+          <img src={logo} alt="Logo" className="h-16" />
+        </a>
+        <button
+          className="md:hidden p-2 text-white focus:outline-none"
+          onClick={toggleMenu}
+          aria-label="Toggle navigation"
+        >
+          <svg
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d={
+                isOpen
+                  ? 'M6 18L18 6M6 6l12 12'
+                  : 'M4 6h16M4 12h16M4 18h16'
+              }
+            />
+          </svg>
+        </button>
+        <div
+          className={`${
+            isOpen ? 'block' : 'hidden'
+          } md:flex md:items-center md:space-x-4`}
+        >
+          <ul className="flex flex-col md:flex-row md:space-x-8">
+            <li>
+              <button
+                className="block py-2 px-4 text-white hover:bg-gray-700 rounded transition duration-300"
+                onClick={() => scrollToSection('aboutMe')}
+              >
+                Acerca de
+              </button>
+            </li>
+            <li>
+              <button
+                className="block py-2 px-4 text-white hover:bg-gray-700 rounded transition duration-300"
+                onClick={() => scrollToSection('skills')}
+              >
+                Habilidades
+              </button>
+            </li>
+            <li>
+              <button
+                className="block py-2 px-4 text-white hover:bg-gray-700 rounded transition duration-300"
+                onClick={() => scrollToSection('proyect')}
+              >
+                Portafolio
+              </button>
+            </li>
+            <li>
+              <button
+                className="block py-2 px-4 text-white hover:bg-gray-700 rounded transition duration-300"
+                onClick={() => scrollToSection('education')}
+              >
+                Educación
+              </button>
+            </li>
+            <li>
+              <button
+                className="block py-2 px-4 text-white hover:bg-gray-700 rounded transition duration-300"
+                onClick={() => scrollToSection('contactMe')}
+              >
+                Contactame
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
 }
 
-export default Navbar
+export default Navbar;

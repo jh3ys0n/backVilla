@@ -1,0 +1,28 @@
+/* Efecto de zoom */
+.zoom {
+    transition: transform 1s ease;
+    
+  }
+  
+  .zoom:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Animación de transición */
+  .fade-enter {
+    opacity: 0;
+  }
+  
+  .fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+  }
+  
+  .fade-exit {
+    opacity: 1;
+  }
+  
+  .fade-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+  }
