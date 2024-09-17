@@ -76,7 +76,7 @@ function Navbar() {
                 className="block py-2 px-4 text-white hover:bg-gray-700 rounded transition duration-300"
                 onClick={() => scrollToSection('aboutMe')}
               >
-                Acerca de
+               Inicio
               </button>
             </li>
             <li>
@@ -84,7 +84,7 @@ function Navbar() {
                 className="block py-2 px-4 text-white hover:bg-gray-700 rounded transition duration-300"
                 onClick={() => scrollToSection('skills')}
               >
-                Habilidades
+               Historia
               </button>
             </li>
             <li>
@@ -92,7 +92,7 @@ function Navbar() {
                 className="block py-2 px-4 text-white hover:bg-gray-700 rounded transition duration-300"
                 onClick={() => scrollToSection('proyect')}
               >
-                Portafolio
+               Lugares Turisticos
               </button>
             </li>
             <li>
@@ -100,7 +100,7 @@ function Navbar() {
                 className="block py-2 px-4 text-white hover:bg-gray-700 rounded transition duration-300"
                 onClick={() => scrollToSection('education')}
               >
-                Educación
+                Galleria 
               </button>
             </li>
             <li>
@@ -108,7 +108,7 @@ function Navbar() {
                 className="block py-2 px-4 text-white hover:bg-gray-700 rounded transition duration-300"
                 onClick={() => scrollToSection('contactMe')}
               >
-                Contactame
+              Acticidades economicas
               </button>
             </li>
           </ul>

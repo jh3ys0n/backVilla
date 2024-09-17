@@ -77,28 +77,32 @@ function HomePages() {
     <>
       <Slider {...settings}>
         {images.map((image, index) => (
-          <div className="relative text-center w-full overflow-hidden rounded-lg h-[600px] md:h-[1000px]" key={index}>
+          <div className="relative text-center w-full overflow-hidden  h-[600px] md:h-[1000px]" key={index}>
             <div className="static">
               <TransitionGroup>
                 <CSSTransition
                   key={image.id}
                   timeout={500}
-                  classNames="fade"
+                  classNames="fade "
                 >
                   <img className="object-cover  brightness-100 absolute block w-full h-full md:h-[1000px] zoom" src={image.src} alt={image.alt} />
+                  
                 </CSSTransition>
               </TransitionGroup>
-              <div className='absolute inset-x-0 w-3/4 md:w-2/2 mx-auto -mt-1 pt-6 md:pt-44'>
+  
+              <div className='absolute z-20 inset-x-0 w-3/4 md:w-2/2 mx-auto -mt-1 pt-6 md:pt-44'>
                 <p className='text-black font-mono my-3 animate__animated animate__fadeInUp text-sm md:text-2xl pt-11 text-center'>{image.subTitle}</p>
                 <h1 className='text-[#E63946] font-shadow my-3 animate__animated animate__fadeInUp text-5xl md:text-9xl text-center'>{image.title}</h1>
 
                 <div className="flex justify-center animate__animated animate__fadeInUp mt-6">
-                <button className="relative px-6 py-3.5 rounded-lg flex h-[35px] w-36   md:h-[50px] md:w-40 items-center justify-center overflow-hidden bg-blue-500 text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-red-400 before:duration-500 before:ease-out hover:shadow-red-400 hover:before:h-56 hover:before:w-56">
+                <button className="relative px-6 py-3.5  flex h-[35px] w-36   md:h-[50px] md:w-40 items-center justify-center overflow-hidden bg-blue-500 text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-red-400 before:duration-500 before:ease-out hover:shadow-red-400 hover:before:h-56 hover:before:w-56">
                   <span className="relative font-bold z-10">Conoce más</span>
                 </button>
                 </div>
               </div>
-              
+              <div
+                    class="absolute inset-0 w-full h-full  to-bg-black-10 bg-gradient-to-tr from-transparent via-transparent to-black/30">
+                </div>
             </div>
           </div>
         ))}

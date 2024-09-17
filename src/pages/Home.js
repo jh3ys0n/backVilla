@@ -9,6 +9,7 @@ import Navbar from './componets/navbar/Navbar'
 import FooterHome from './componets/HomePages/FooterHome'
 import Paralax_home from './componets/HomePages/Paralax_home'
 import GalleryVideo from './componets/HomePages/GalleryVideo'
+import Places from './componets/HomePages/Places'
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
    <HomePages></HomePages>
     <HistoryComunity></HistoryComunity>
     <Paralax_home></Paralax_home>
+    <Places></Places>
     <Gallery></Gallery>
     
     <Activitys></Activitys>
